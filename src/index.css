@@ -426,6 +426,10 @@ code {
   overflow-x: scroll;
 }
 
+.ant-table-wrapper::-webkit-scrollbar{
+  display: none;
+}
+
 /* Big Card 5 */
 
 .big-card-5{
