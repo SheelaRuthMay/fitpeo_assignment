@@ -172,6 +172,11 @@ code {
   color: #0685f8;
 }
 
+.ant-menu li:last-child{
+  position: fixed !important;
+  bottom: 0;
+}
+
 
 
 /* CONTENT */
@@ -251,10 +256,26 @@ code {
 
 .big-card-1 .graph-text{
   font-size: 9px;
+  margin-top: 8px !important;
+}
+
+.ring-text{
+  font-size: 10px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.ring-text b{
+  font-size: 17px;
 }
 
 .text-right{
   text-align: right;
+}
+
+.big-card-1 .ant-progress-inner{
+  width: 105px !important;
+  height: 105px !important;
 }
 
 /* Big Card 2 */
@@ -265,6 +286,10 @@ code {
   border-radius: 15px;
   color: #ffffff;
   border: 0;
+}
+
+.big-card-2 h2{
+  font-size: 16px;
 }
 
 /* Big Card 3 */
@@ -394,6 +419,11 @@ code {
     border-color: #9c0000 !important;
     border-radius: 9px;
     padding: 1px 20px;
+}
+
+.ant-table-wrapper{
+  width: 100%;
+  overflow-x: scroll;
 }
 
 /* Big Card 5 */

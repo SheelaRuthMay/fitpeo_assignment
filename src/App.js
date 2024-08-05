@@ -2,10 +2,10 @@ import React from 'react';
 import User from './assets/images/user.jpg';
 import logo from './logo.svg';
 import Dashboard from './pages/Dashboard';
-import { HomeFilled, BarChartOutlined, CreditCardOutlined, ShoppingOutlined, FileDoneOutlined, SearchOutlined, MailOutlined, SettingOutlined, BellOutlined } from '@ant-design/icons';
+import { HomeFilled, BarChartOutlined, CreditCardOutlined, ShoppingOutlined, FileDoneOutlined, SearchOutlined, MailOutlined, SettingOutlined, BellOutlined, LogoutOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, Input, Row, Col, Badge, Dropdown, Card } from 'antd';
 const { Header, Content, Sider } = Layout;
-const menuItems = [HomeFilled, BarChartOutlined, FileDoneOutlined, CreditCardOutlined, ShoppingOutlined].map((icon, index) => {
+const menuItems = [ HomeFilled, BarChartOutlined, FileDoneOutlined, CreditCardOutlined, ShoppingOutlined, LogoutOutlined ].map((icon, index) => {
   const key = String(index + 1);
   return {
     key: `sub${key}`,
@@ -69,7 +69,8 @@ const App = () => {
       </Header>
       <Layout>
         <Sider
-          width={70}>
+          width={70}
+          >
           <Menu
           theme='dark'
             mode="inline"

@@ -1,5 +1,5 @@
-import { Row, Col, Card } from 'antd';
-import { Tiny } from '@ant-design/plots';
+import { Row, Col, Card, Progress } from 'antd';
+import { RingProgress } from '@ant-design/plots';
 import SmallCard from '../components/SmallCard';
 import BigCard2 from '../components/BigCard2';
 import BigCard3 from '../components/BigCard3';
@@ -33,6 +33,7 @@ const Dashboard = () => {
                     textAlign: 'center',
                     fontSize: 20,
                     textColor: '#ffffff',
+                    color: '#ffffff',
                     fontStyle: 'bold',
                 },
             },
@@ -64,7 +65,8 @@ const Dashboard = () => {
                                 </div>
                             </Col>
                             <Col span={12} className='text-right'>
-                                <Tiny.Ring {...config} />
+                                {/* <RingProgress {...config} /> */}
+                                <Progress type="circle" percent={70} format={(percent)=> <p className='ring-text'><b>{percent}%</b><br/>Goal<br/>Completed</p>} />
                                 <p className='m-0 graph-text'>* The values here has been rounded off.</p>
                             </Col>
 
